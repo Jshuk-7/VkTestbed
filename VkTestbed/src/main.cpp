@@ -1,21 +1,11 @@
-#include <GLFW/glfw3.h>
-#include <vulkan/vulkan.h>
+#include "config/Types.h"
+#include "Application.h"
 
-#define GLM_FORCE_RADIANS
-#define GLM_FORCE_DEPTH_ZERO_TO_ONE
-#include <glm/glm.hpp>
-
-int main(int argc, char** argv)
+i32 main(i32 argc, char** argv)
 {
-	glfwInit();
+	Application app = Application();
 
-	glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-	glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+	app.Run();
 
-	GLFWwindow* window = glfwCreateWindow(800, 600, "Vulkan Testbed", nullptr, nullptr);
-
-	while (!glfwWindowShouldClose(window))
-	{
-		glfwPollEvents();
-	}
+	return EXIT_SUCCESS;
 }

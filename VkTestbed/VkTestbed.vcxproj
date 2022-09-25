@@ -145,7 +145,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Pipeline.cpp" />
+    <ClCompile Include="src\Application.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config\Assert.h" />
+    <ClInclude Include="src\Pipeline.h" />
+    <ClInclude Include="src\Application.h" />
+    <ClInclude Include="src\config\Types.h" />
+    <ClInclude Include="src\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compile.bat" />
+    <None Include="shaders\basic.frag" />
+    <None Include="shaders\basic.frag.spv" />
+    <None Include="shaders\basic.vert" />
+    <None Include="shaders\basic.vert.spv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
