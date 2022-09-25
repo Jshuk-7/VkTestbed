@@ -1,0 +1,6 @@
+/.vs
+/x64
+/VkTestbed/x64
+/VkTestbed/vendor
+
+*.user
